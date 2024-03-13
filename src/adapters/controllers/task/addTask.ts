@@ -33,8 +33,7 @@ export class AddTaskController implements Controller {
       }
 
       const task = await this.addTask.add({ title, description, date });
-      // return created(task);
-      throw new Error("Forced error");
+      return created(task);
     } catch (error: any) {
       return serverError(error);
     }
