@@ -1,10 +1,10 @@
 import { AddTask } from "../../../usecases/addTask";
-import { Controller } from "../../interfaces/controller";
-import { DateValidator } from "../../interfaces/dateValidator";
-import { HttpRequest, HttpResponse } from "../../interfaces/http";
-import { Validation } from "../../interfaces/validation";
-import { InvalidParamError } from "../../presentations/api/errors/invalid-param-error";
-import { MissingParamError } from "../../presentations/api/errors/missing-param-error";
+import {
+  Controller,
+  HttpRequest,
+  HttpResponse,
+  Validation,
+} from "../../interfaces";
 import {
   badRequest,
   created,
