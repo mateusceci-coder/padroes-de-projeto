@@ -19,3 +19,8 @@ export const created = (data: any): HttpResponse => ({
 export const noContent = (): HttpResponse => ({
   statusCode: 204,
 });
+
+export const deleted = (data: any): HttpResponse => ({
+  statusCode: 204,
+  body: data,
+});
